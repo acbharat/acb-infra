@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-#jenkins declarative pipeline
-=======
->>>>>>> d6f6d9f1b79d36482d1f775eb94f75273b5c724c
+
 pipeline {
       agent any
 
@@ -9,6 +6,10 @@ pipeline {
         stage ('Build') {
             steps {
                 sh 'echo "hello world" '
+                sh '''
+                    echo "Multi line steps to execute"
+                    ls -l
+                '''
             }
         }
     }
