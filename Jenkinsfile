@@ -12,9 +12,16 @@ pipeline {
                 '''
             }
         }
+
         stage ('Test'){
             steps {
-                sh ' echo "Start testing"'
+                sh 'echo "Start testing"'
+            }
+        }
+
+        stage (Staging Deploy){
+            steps {
+                sh 'echo "Start Staging deployment"'
             }
         }
     }
