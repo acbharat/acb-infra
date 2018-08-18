@@ -1,11 +1,14 @@
+<<<<<<< HEAD
 #jenkins declarative pipeline
+=======
+>>>>>>> d6f6d9f1b79d36482d1f775eb94f75273b5c724c
 pipeline {
-    agent { docker {image 'maven 3.3.3'} }
+      agent any
 
     stages {
         stage ('Build') {
             steps {
-                sh 'mvn -v-version'
+                sh 'echo "hello world" '
             }
         }
     }
