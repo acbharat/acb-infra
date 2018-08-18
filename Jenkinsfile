@@ -1,4 +1,4 @@
-
+#jenkins declarative pipeline
 pipeline {
     agent { docker {image 'maven 3.3.3'} }
 
